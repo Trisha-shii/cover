@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cover: What Went Wrong?</title>
+  <!-- Importing fonts for the polished look -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:wght@300;400;700&family=Courier+New:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'book_app/style.css' %}">
+</head>
+<body>
+
+<div class="page">
+  <div class="book">
+
+    <!-- Top Section: Title & Synopsis -->
+    <div class="top-section">
+      <h1 class="title">What Went Wrong?</h1>
+      <span class="subtitle">{ AI Special }</span>
+
+      <div class="synopsis">
+        The code was flawless. The logic, undeniable. Yet, when the world's most advanced AI, 'Aura', falls silent for exactly 13 seconds, the chaos that follows is inexplicable. In this gripping exposé, we decode the digital anomaly that nearly erased humanity's footprint. Was it a glitch, or a ghost in the machine?
+      </div>
+    </div>
+
+    <!-- Spacer: Pushes content apart to show the robot in the middle -->
+    <div class="spacer"></div>
+
+    <!-- Bottom Section: Author Box -->
+    <div class="bottom-section">
+      <div class="author-box">
+        <img src="{% static 'book_app/author.jpg' %}" alt="Trisha Priyadarshni">
+        <div class="author-text">
+          <h3>Trisha Priyadarshni</h3>
+          <p>
+            A cybersecurity analyst turned whistleblower. After a decade inside the Silicon Valley black box, Trisha writes thrillers that blur the terrifying line between digital nightmares and our fragile reality.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Strip: Publisher & Price -->
+    <div class="footer-strip">
+      <span>SEC Publishing House</span>
+      <span class="price-tag">Price : Rs. 399</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
